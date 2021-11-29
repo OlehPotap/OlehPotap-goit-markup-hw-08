@@ -7,7 +7,26 @@ footer {
 
 .footer {
   display: flex;
-  align-items: baseline;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  @include mq(tablet) {
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+
+    justify-content: space-around;
+  }
+
+  @include mq(desktop) {
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 
   &-logo {
     color: var(--secondary-text-color);
@@ -48,6 +67,33 @@ footer {
       color: var(--focus-color);
     }
   }
+
+  &-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include mq(desktop) {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    address {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      margin-bottom: 60px;
+
+      @include mq(desktop) {
+        align-items: flex-start;
+      }
+    }
+  }
 }
 
 address p {
@@ -65,7 +111,28 @@ address p {
 /* Соц сети в футере */
 
 .footer-socials {
-  margin-left: 70px;
+  margin-left: 0px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 60px;
+
+  @include mq(tablet) {
+    margin-left: 0px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @include mq(desktop) {
+    margin-left: 70px;
+    align-items: flex-start;
+  }
 
   ul {
     display: flex;
@@ -123,12 +190,40 @@ address p {
 /* Форма в футере */
 
 .type-email {
-  width: 570px;
+  width: 450px;
+  text-align: center;
 
-  margin-left: 93px;
+  margin-left: 0px;
+
+  @include mq(tablet) {
+    width: 450px;
+    margin-top: 60px;
+    margin-left: 0px;
+  }
+
+  @include mq(desktop) {
+    text-align: start;
+    margin-left: 93px;
+  }
 
   form {
     display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+
+    @include mq(tablet) {
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      align-items: center;
+    }
+
+    @include mq(desktop) {
+      flex-direction: row;
+      text-align: start;
+      align-items: flex-start;
+    }
   }
 
   p {
@@ -146,12 +241,23 @@ address p {
   }
 
   input {
+    width: 450px;
+
+    @include mq(tablet) {
+      width: 450px;
+    }
+
+    @include mq(desktop) {
+      width: 358px;
+    }
     background-color: transparent;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
 
-    width: 358px;
+    width: 450px;
     height: 50px;
+
+    margin-bottom: 20px;
 
     padding: 15px 16px;
 

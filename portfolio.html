@@ -14,7 +14,6 @@
   <!-- основа -->
   <body class="site">
     <!-- Хедер -->
-
     <header>
       <!-- Контейнер для хедера -->
       <div class="header container">
@@ -25,10 +24,10 @@
         <!-- Навигация -->
         <nav class="site-nav">
           <ul class="nav-list list">
-            <li><a href="./index.html">Студия</a></li>
             <li>
-              <a class="current-page" href="./portfolio.html">Портфолио</a>
+              <a class="current-page" href="./index.html">Студия</a>
             </li>
+            <li><a href="./portfolio.html">Портфолио</a></li>
             <li><a href="">Контакты</a></li>
           </ul>
         </nav>
@@ -51,6 +50,62 @@
             >
           </li>
         </ul>
+        <button class="burger-button" type="button">
+          <svg class="burger-button" width="40px" height="40px">
+            <use href="./images/symbol-defs.svg#burger"></use>
+          </svg>
+        </button>
+
+        <!-- Модальное меню  -->
+
+        <div class="modal-menu">
+          <div class="nav-menu">
+            <ul class="nav-menu__list">
+              <li class="nav-menu__list-item">
+                <a class="nav-menu__link" href="">Студия</a>
+              </li>
+              <li class="nav-menu__list-item">
+                <a class="nav-menu__link" href="">Портфолио</a>
+              </li>
+              <li class="nav-menu__list-item">
+                <a class="nav-menu__link" href="">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="contacts-menu">
+            <ul class="contacts-menu__list">
+              <li class="contacts-menu__list-item">
+                <a class="contacts-menu__link accent" href=""
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li class="contacts-menu__list-item">
+                <a class="contacts-menu__link" href="">info@devstudio.com</a>
+              </li>
+            </ul>
+          </div>
+          <div class="socials-menu">
+            <ul class="socials-menu__list">
+              <li class="socials-menu__list-item">
+                <a class="socials-menu__link" href="">Instagram</a>
+              </li>
+              <li class="socials-menu__list-item">
+                <a class="socials-menu__link" href="">Twitter</a>
+              </li>
+              <li class="socials-menu__list-item">
+                <a class="socials-menu__link" href="">Facebook</a>
+              </li>
+              <li class="socials-menu__list-item">
+                <a class="socials-menu__link" href="">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+          <button class="close-menu">
+            <svg class="cross" width="40px" height="40px">
+              <use href="./images/icons.svg#cross"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </header>
     <main>
@@ -76,7 +131,7 @@
             </li>
           </ul>
           <!-- Примеры работ -->
-          <ul class="examples list container">
+          <ul class="examples list">
             <li class="example">
               <a class="example__link" href="">
                 <div class="example__image-box">
@@ -326,7 +381,7 @@
             <input type="email" name="email" placeholder="E-mail" />
             <button type="submit">
               Подписаться
-              <svg width="24px" height="24px">
+              <svg aria-label="send" width="24px" height="24px">
                 <use href="./images/icons.svg#send"></use>
               </svg>
             </button>

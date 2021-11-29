@@ -2,6 +2,8 @@
 @import "./utils/variables";
 // Нормализатор стилей
 @import "./utils/modern-normalize";
+// Медиа запросы
+@import "./utils/mixins";
 // Глобальные стили
 @import "./utils/global-styles";
 //Стили Хедера
@@ -24,3 +26,5 @@
 @import "./components/page-footer";
 // Стили модального окна
 @import "./components/modal";
+// Стили модального меню
+@import "./components/modal-menu";

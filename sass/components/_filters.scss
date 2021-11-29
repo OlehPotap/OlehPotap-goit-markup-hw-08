@@ -2,16 +2,52 @@
 
 .filter {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 35px;
 
   li {
     margin-left: 8px;
+    margin-bottom: 15px;
   }
 
   li:first-child {
     margin-left: 0px;
+  }
+
+  @include mq(tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 35px;
+
+    li {
+      margin-left: 8px;
+      margin-bottom: 15px;
+    }
+
+    li:first-child {
+      margin-left: 0px;
+    }
+  }
+
+  @include mq(desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 35px;
+
+    li {
+      margin-left: 8px;
+      margin-bottom: 15px;
+    }
+
+    li:first-child {
+      margin-left: 0px;
+    }
   }
 }
 

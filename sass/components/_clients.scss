@@ -1,71 +1,86 @@
 /* Список клиентов */
 
 .clients {
-    padding: 94px 0px;
-    text-align: center;
+  padding: 94px 0px;
+  text-align: center;
 
-    h2 {
-      font-weight: 700;
-      font-size: 36px;
-      line-height: 1.2;
-      text-align: center;
-      letter-spacing: 0.03em;
-      margin-bottom: 50px;
+  h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+  }
+}
+
+.clients__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @include mq(desktop) {
+    flex-wrap: unset;
+  }
+
+  .client {
+    width: 210px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    margin-bottom: 30px;
+
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--time-function);
+
+    &:nth-child(2n + 1) {
+      margin-right: 30px;
+    }
+
+    &:hover,
+    &:focus {
+      border-color: var(--focus-color);
+    }
+
+    &:hover .client__icon,
+    &:focus .client__icon {
+      fill: var(--focus-color);
     }
   }
-  
-  .clients__list {
+
+  @include mq(tablet) {
+    .client {
+      &:nth-child(n + 1) {
+        margin-right: 30px;
+      }
+    }
+  }
+
+  @include mq(desktop) {
+    .client {
+      margin-right: 30px;
+    }
+  }
+
+  .client__link {
     display: flex;
+
+    align-items: center;
     justify-content: center;
 
-    .client {
-      width: 170px;
-      height: 92px;
-      border: 1px solid #afb1b8;
-      border-radius: 4px;
-      margin-left: 30px;
-    
-      transition-property: border-color;
-      transition-duration: 250ms;
-      transition-timing-function: var(--time-function);
-
-      &:first-child {
-        margin-left: 0px;
-      }
-
-      &:hover,
-      &:focus {
-        border-color: var(--focus-color);
-      }
-
-      &:hover .client__icon,
-      &:focus .client__icon {
-        fill: var(--focus-color);
-      }
-      
-
-    }
-
-    .client__link {
-      display: flex;
-    
-      align-items: center;
-      justify-content: center;
-    
-      width: 100%;
-      height: 100%;
-    }
-
-    .client__icon {
-      fill: #afb1b8;
-    
-      width: 106px;
-      height: 60px;
-    
-      transition-property: fill;
-      transition-duration: 250ms;
-      transition-timing-function: var(--time-function);
-    }
+    width: 100%;
+    height: 100%;
   }
-  
-  
+
+  .client__icon {
+    fill: #afb1b8;
+
+    width: 106px;
+    height: 60px;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: var(--time-function);
+  }
+}
