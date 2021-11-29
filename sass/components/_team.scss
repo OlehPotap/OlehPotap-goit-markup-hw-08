@@ -1,0 +1,102 @@
+/* Наша команда */
+
+.section-team-box > .list {
+  display: flex;
+}
+
+.section-team-box > ul > li {
+  background-color: #ffffff;
+  border-radius: 0 0 4px 4px;
+  margin-left: 30px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.section-team-box li:first-child {
+  margin-left: 0px;
+}
+
+.team {
+  background-color: var(--our-team-bg-color);
+
+  h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+  }
+
+  h3 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    margin-bottom: 10px;
+  }
+
+  p {
+    color: var(--extra-text-color);
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 16px;
+  }
+}
+
+.signature {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 32px;
+  padding-left: 32px;
+
+  a {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--time-function);
+
+    &:hover svg,
+    &:focus svg {
+      fill: var(--secondary-text-color);
+    }
+
+    &:hover,
+    &:focus {
+      background-color: var(--focus-color);
+    }
+  }
+
+  li {
+    margin-left: 10px;
+    &:first-child {
+      margin-left: 0px;
+    }
+  }
+
+  svg {
+    fill: #afb1b8;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: var(--time-function);
+  }
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+}

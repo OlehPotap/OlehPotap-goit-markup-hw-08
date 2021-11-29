@@ -1,0 +1,26 @@
+// Переменные
+@import "./utils/variables";
+// Нормализатор стилей
+@import "./utils/modern-normalize";
+// Глобальные стили
+@import "./utils/global-styles";
+//Стили Хедера
+@import "./components/page-header";
+// Стили Шапки
+@import "./components/hero";
+// Стили особенностей
+@import "./components/fetures";
+// Стили секцции "чем мы занимаемся"
+@import "./components/occupation";
+// Стили секции "наша команда"
+@import "./components/team";
+// Стили секции "клиенты"
+@import "./components/clients";
+// Стили Фильтра Портфолио
+@import "./components/filters";
+// Стили секии "Примеры работ"
+@import "./components/examples";
+// Стили футера
+@import "./components/page-footer";
+// Стили модального окна
+@import "./components/modal";

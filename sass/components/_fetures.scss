@@ -1,0 +1,50 @@
+/* Особенности */
+
+.fetures {
+  padding-bottom: 0px;
+
+  &-box > .list {
+    display: flex;
+  }
+
+  &-box > .list > li {
+    margin-left: 30px;
+  }
+
+  &-box > .list > li:first-child {
+    margin-left: 0px;
+  }
+
+  h3 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+
+  p {
+    color: var(--extra-text-color);
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.8;
+    letter-spacing: 0.03em;
+    margin-top: 10px;
+  }
+}
+
+.feture {
+  width: 270px;
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+    background: var(--our-team-bg-color);
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+}

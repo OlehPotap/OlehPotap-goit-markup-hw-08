@@ -1,0 +1,96 @@
+/* Примеры работ */
+
+.examples {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.example {
+  margin-left: 30px;
+  margin-bottom: 30px;
+
+  &__description {
+    color: var(--secondary-text-color);
+    background-color: rgba(33, 150, 243, 0.9);
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+
+    padding: 63px 24px;
+
+    position: absolute;
+
+    top: 0%;
+    width: 100%;
+    height: 100%;
+
+    transform: translatey(+100%);
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: var(--time-function);
+
+    .example__link:hover &,
+    .example__link:focus & {
+      transform: translatey(0);
+    }
+  }
+
+  &__image-box {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &:nth-child(3n + 1) {
+    margin-left: 0px;
+  }
+
+  &:nth-last-child(-n + 3) {
+    margin-bottom: 0px;
+  }
+
+  .example__link {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+
+    color: inherit;
+
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: var(--time-function);
+
+    &:hover,
+    &:focus {
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+  }
+
+  .example__info-box {
+    border-right: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+    border-left: 1px solid #eeeeee;
+
+    padding: 20px 24px;
+
+    h3 {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 2;
+      letter-spacing: 0.06em;
+      margin-bottom: 4px;
+    }
+
+    p {
+      color: var(--extra-text-color);
+
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 2;
+      letter-spacing: 0.03em;
+    }
+  }
+}
