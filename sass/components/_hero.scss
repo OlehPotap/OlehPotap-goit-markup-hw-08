@@ -3,6 +3,8 @@
 .hero {
   padding: 200px 0px;
   background-color: var(--hero-footer-background-color);
+  background-repeat: no-repeat;
+  background-size: cover;
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
@@ -17,6 +19,42 @@
         rgba(47, 48, 58, 0.4)
       ),
       url(../images/hero-overlay/bg-image_sm@2x.jpg);
+  }
+
+  @include mq(tablet) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero-overlay/bg-image_md.jpg);
+
+    @include mq(retina) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero-overlay/bg-image_md@2x.jpg);
+    }
+  }
+
+  @include mq(desktop) {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero-overlay/herobg.jpg);
+
+    @include mq(retina) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero-overlay/herobg@2x.jpg);
+    }
   }
 
   max-width: 1600px;

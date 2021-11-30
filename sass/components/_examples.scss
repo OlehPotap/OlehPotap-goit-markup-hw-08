@@ -6,7 +6,6 @@
 }
 
 .example {
-  width: 450px;
   margin-bottom: 30px;
 
   &:last-child {
@@ -14,7 +13,7 @@
   }
 }
 
-@include mq(tablet) {
+@include mq(tablet-only) {
   .example {
     width: 354px;
     margin-bottom: 30px;
@@ -31,7 +30,6 @@
 
 @include mq(desktop) {
   .example {
-    width: 370px;
     margin-left: 30px;
     margin-bottom: 30px;
 

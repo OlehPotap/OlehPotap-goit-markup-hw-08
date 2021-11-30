@@ -17,7 +17,7 @@
 
   z-index: 1;
 
-  opacity: 1;
+  // opacity: 0;
 
   background-color: white;
 
@@ -25,24 +25,23 @@
   transition-duration: 250ms;
   transition-timing-function: var(--time-function);
 
-  transition-property: opacity;
-  transition-duration: 250ms;
-  transition-timing-function: var(--time-function);
+  // transition-property: opacity;
+  // transition-duration: 250ms;
+  // transition-timing-function: var(--time-function);
 }
 
-.modal-menu.is-hidden {
-  opacity: 0;
-  pointer-events: none;
+.modal-menu.is-visible {
+  // opacity: 1;
 
-  transform: translateX(-100%);
+  transform: translateX(0%);
 
-  transition-property: opacity;
+  transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: var(--time-function);
 
-  transition-property: opacity;
-  transition-duration: 250ms;
-  transition-timing-function: var(--time-function);
+  // transition-property: opacity;
+  // transition-duration: 250ms;
+  // transition-timing-function: var(--time-function);
 }
 
 .close-menu {

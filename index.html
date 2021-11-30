@@ -50,22 +50,22 @@
             >
           </li>
         </ul>
-        <button class="burger-button" type="button">
-          <svg class="burger-button" width="40px" height="40px">
+        <button class="burger-button" type="button" data-mobile-menu-open>
+          <svg width="40px" height="40px">
             <use href="./images/symbol-defs.svg#burger"></use>
           </svg>
         </button>
 
         <!-- Модальное меню  -->
 
-        <div class="modal-menu">
+        <div class="modal-menu" data-mobile-menu>
           <div class="nav-menu">
             <ul class="nav-menu__list">
               <li class="nav-menu__list-item">
-                <a class="nav-menu__link" href="">Студия</a>
+                <a class="nav-menu__link" href="./index.html">Студия</a>
               </li>
               <li class="nav-menu__list-item">
-                <a class="nav-menu__link" href="">Портфолио</a>
+                <a class="nav-menu__link" href="./portfolio.html">Портфолио</a>
               </li>
               <li class="nav-menu__list-item">
                 <a class="nav-menu__link" href="">Контакты</a>
@@ -100,7 +100,7 @@
               </li>
             </ul>
           </div>
-          <button class="close-menu">
+          <button class="close-menu" data-mobile-menu-close>
             <svg class="cross" width="40px" height="40px">
               <use href="./images/icons.svg#cross"></use>
             </svg>
@@ -214,12 +214,33 @@
           <h2>Наша команда</h2>
           <ul class="list">
             <li>
-              <img
-                src="./images/avatar1.jpg"
-                alt="Аватарка"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/team-members/tm1-270.jpg    1x,
+                    ./images/team-members/tm1@2x-270.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team-members/tm1-354.jpg    1x,
+                    ./images/team-members/tm1@2x-354.jpg 2x
+                  "
+                />
+
+                <img
+                  srcset="
+                    ./images/team-members/tm1-450.jpg    1x,
+                    ./images/team-members/tm1@2x-450.jpg 2x
+                  "
+                  src="./images/team-members/tm1-450.jpg"
+                  alt="Аватарка"
+                  width="450"
+                  loading="lazy"
+                />
+              </picture>
               <div class="signature">
                 <h3>Игорь Демьяненко</h3>
                 <p>Product Designer</p>
@@ -256,12 +277,33 @@
               </div>
             </li>
             <li>
-              <img
-                src="./images/avatar2.jpg"
-                alt="Аватарка"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/team-members/tm2-270.jpg    1x,
+                    ./images/team-members/tm2@2x-270.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team-members/tm2-354.jpg    1x,
+                    ./images/team-members/tm2@2x-354.jpg 2x
+                  "
+                />
+
+                <img
+                  srcset="
+                    ./images/team-members/tm2-450.jpg    1x,
+                    ./images/team-members/tm2@2x-450.jpg 2x
+                  "
+                  src="./images/team-members/tm2-450.jpg"
+                  alt="Аватарка"
+                  width="450"
+                  loading="lazy"
+                />
+              </picture>
               <div class="signature">
                 <h3>Ольга Репина</h3>
                 <p>Frontend Developer</p>
@@ -298,12 +340,33 @@
               </div>
             </li>
             <li>
-              <img
-                src="./images/avatar3.jpg"
-                alt="Аватарка"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/team-members/tm3-270.jpg    1x,
+                    ./images/team-members/tm3@2x-270.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team-members/tm3-354.jpg    1x,
+                    ./images/team-members/tm3@2x-354.jpg 2x
+                  "
+                />
+
+                <img
+                  srcset="
+                    ./images/team-members/tm3-450.jpg    1x,
+                    ./images/team-members/tm3@2x-450.jpg 2x
+                  "
+                  src="./images/team-members/tm3-450.jpg"
+                  alt="Аватарка"
+                  width="450"
+                  loading="lazy"
+                />
+              </picture>
               <div class="signature">
                 <h3>Николай Тарасов</h3>
                 <p>Marketing</p>
@@ -340,12 +403,33 @@
               </div>
             </li>
             <li>
-              <img
-                src="./images/avatar4.jpg"
-                alt="Аватарка"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/team-members/tm4-270.jpg    1x,
+                    ./images/team-members/tm4@2x-270.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team-members/tm4-354.jpg    1x,
+                    ./images/team-members/tm4@2x-354.jpg 2x
+                  "
+                />
+
+                <img
+                  srcset="
+                    ./images/team-members/tm4-450.jpg    1x,
+                    ./images/team-members/tm4@2x-450.jpg 2x
+                  "
+                  src="./images/team-members/tm4-450.jpg"
+                  alt="Аватарка"
+                  width="450"
+                  loading="lazy"
+                />
+              </picture>
               <div class="signature">
                 <h3>Михаил Ермаков</h3>
                 <p>UI Designer</p>
@@ -591,5 +675,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
