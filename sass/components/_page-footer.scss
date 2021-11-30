@@ -103,9 +103,10 @@ footer {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    justify-content: space-between;
     &-wraper {
       display: flex;
-      align-items: flex-start;
+      align-items: baseline;
     }
   }
 }
