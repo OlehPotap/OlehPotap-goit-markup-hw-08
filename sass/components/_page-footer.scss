@@ -16,23 +16,6 @@ footer {
   justify-content: center;
   flex-direction: column;
 
-  @include mq(tablet) {
-    display: flex;
-    align-items: baseline;
-    flex-direction: row;
-    flex-wrap: wrap;
-    text-align: center;
-
-    justify-content: space-around;
-  }
-
-  @include mq(desktop) {
-    display: flex;
-    align-items: baseline;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-
   &-logo {
     color: var(--secondary-text-color);
 
@@ -94,9 +77,35 @@ footer {
 
       margin-bottom: 60px;
 
+      @include mq(tablet) {
+        margin-bottom: 0px;
+      }
+
       @include mq(desktop) {
         align-items: flex-start;
       }
+    }
+  }
+}
+
+@include mq(tablet) {
+  .footer {
+    display: flex;
+    &-wraper {
+      display: flex;
+      align-items: baseline;
+    }
+  }
+}
+
+@include mq(desktop) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    &-wraper {
+      display: flex;
+      align-items: flex-start;
     }
   }
 }
@@ -126,7 +135,8 @@ address p {
   margin-bottom: 60px;
 
   @include mq(tablet) {
-    margin-left: 0px;
+    margin-left: 165px;
+    margin-bottom: 0px;
 
     display: flex;
     flex-direction: column;
@@ -208,6 +218,7 @@ address p {
 
   @include mq(desktop) {
     text-align: start;
+    margin-top: 0px;
     margin-left: 93px;
   }
 
