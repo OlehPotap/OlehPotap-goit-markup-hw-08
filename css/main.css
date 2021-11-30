@@ -1282,6 +1282,8 @@ header {
 
 .example {
   border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
   margin-bottom: 30px;
 }
 
@@ -1297,14 +1299,14 @@ header {
   .example:nth-child(2n + 1) {
     margin-right: 30px;
   }
-  .example:nth-last-child(-n + 2) {
+  .example:last-child {
     margin-bottom: 0px;
   }
 }
 
 @media (min-width: 1280px) {
   .example {
-    margin-left: 30px;
+    margin-left: 20px;
     margin-bottom: 30px;
   }
   .example:nth-child(3n + 1) {
@@ -1371,16 +1373,13 @@ header {
           transition-timing-function: var(--time-function);
 }
 
-.example .example__link:hover .example,
-.example .example__link:focus .example {
+.example .example__link:hover, .example .example__link:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .example .example__info-box {
   padding: 20px 24px;
-  border-right: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
 }
 
 .example .example__info-box h3 {
