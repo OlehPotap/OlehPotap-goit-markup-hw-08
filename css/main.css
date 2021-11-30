@@ -1074,7 +1074,6 @@ header {
 .clients {
   padding: 94px 0px;
   text-align: center;
-  min-width: 520px;
 }
 
 .clients h2 {
@@ -1282,6 +1281,7 @@ header {
 }
 
 .example {
+  border-bottom: 1px solid #eeeeee;
   margin-bottom: 30px;
 }
 
@@ -1371,14 +1371,14 @@ header {
           transition-timing-function: var(--time-function);
 }
 
-.example .example__link:hover, .example .example__link:focus {
+.example .example__link:hover .example,
+.example .example__link:focus .example {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .example .example__info-box {
   border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   padding: 20px 24px;
 }

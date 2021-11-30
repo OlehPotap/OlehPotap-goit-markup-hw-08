@@ -6,9 +6,7 @@
 }
 
 .example {
-  border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
 
   margin-bottom: 30px;
 
@@ -101,6 +99,8 @@
   }
 
   .example__info-box {
+    border-right: 1px solid #eeeeee;
+    border-left: 1px solid #eeeeee;
     padding: 20px 24px;
 
     h3 {
