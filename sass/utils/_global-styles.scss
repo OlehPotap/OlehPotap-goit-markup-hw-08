@@ -66,4 +66,13 @@ img {
 
 .section {
   padding: 94px 0px;
+  min-width: 360px;
+
+  @include mq(tablet) {
+    min-width: 768px;
+  }
+
+  @include mq(desktop) {
+    min-width: 1280px;
+  }
 }

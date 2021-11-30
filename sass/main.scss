@@ -1,11 +1,11 @@
+// Медиа запросы
+@import "./utils/mixins";
 // Переменные
 @import "./utils/variables";
 // Нормализатор стилей
 @import "./utils/modern-normalize";
-// Медиа запросы
-@import "./utils/mixins";
 // Глобальные стили
-@import "./utils/global-styles";
+@import "./utiles/global-styles";
 //Стили Хедера
 @import "./components/page-header";
 // Стили Шапки
