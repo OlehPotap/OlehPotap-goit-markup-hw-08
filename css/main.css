@@ -1308,6 +1308,7 @@ header {
 
 @media (min-width: 1280px) {
   .example {
+    width: 370px;
     margin-left: 20px;
     margin-bottom: 30px;
   }
