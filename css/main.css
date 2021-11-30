@@ -347,7 +347,7 @@ img {
 
 .section {
   padding: 94px 0px;
-  min-width: 360px;
+  min-width: 480px;
 }
 
 @media (min-width: 768px) {
@@ -364,6 +364,8 @@ img {
 
 /* Хедер */
 header {
+  min-width: 480px;
+  padding: 0px 0px;
   border-bottom: 1px solid #ececec;
 }
 
@@ -1403,6 +1405,9 @@ footer {
   background-color: var(--hero-footer-background-color);
   padding-top: 60px;
   padding-bottom: 60px;
+  padding-left: 0px;
+  padding-right: 0px;
+  min-width: 480px;
 }
 
 .footer {

@@ -66,7 +66,7 @@ img {
 
 .section {
   padding: 94px 0px;
-  min-width: 360px;
+  min-width: 480px;
 
   @include mq(tablet) {
     min-width: 768px;
