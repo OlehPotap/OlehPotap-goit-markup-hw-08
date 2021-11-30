@@ -365,8 +365,14 @@ img {
 /* Хедер */
 header {
   min-width: 480px;
-  padding: 0px 0px;
   border-bottom: 1px solid #ececec;
+  padding: 0px 0px;
+}
+
+@media (max-width: 767.98px) {
+  header {
+    padding: 10px 0px;
+  }
 }
 
 /* Контейнер для хедера */
@@ -377,7 +383,6 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10px 0px;
 }
 
 .header .burger-button {

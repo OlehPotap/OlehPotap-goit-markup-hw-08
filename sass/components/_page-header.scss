@@ -1,8 +1,13 @@
 /* Хедер */
 header {
   min-width: 480px;
-  padding: 0px 0px;
   border-bottom: 1px solid #ececec;
+
+  padding: 0px 0px;
+
+  @include mq(mobile-only) {
+    padding: 10px 0px;
+  }
 }
 
 /* Контейнер для хедера */
@@ -10,8 +15,6 @@ header {
 .header {
   display: flex;
   align-items: center;
-
-  padding: 10px 0px;
 
   .burger-button {
     z-index: 1;
