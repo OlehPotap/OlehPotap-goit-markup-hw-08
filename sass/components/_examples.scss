@@ -3,6 +3,8 @@
 .examples {
   display: flex;
   flex-wrap: wrap;
+
+  min-width: 360px;
 }
 
 .example {
