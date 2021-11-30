@@ -1,9 +1,7 @@
 /* Хедер */
-header {
+.header {
   min-width: 480px;
   border-bottom: 1px solid #ececec;
-
-  padding: 0px 0px;
 
   @include mq(mobile-only) {
     padding: 10px 0px;
@@ -12,7 +10,7 @@ header {
 
 /* Контейнер для хедера */
 
-.header {
+.header-container {
   display: flex;
   align-items: center;
 
